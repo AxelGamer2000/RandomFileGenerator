@@ -1,0 +1,37 @@
+"""
+    def keyPressEvent(self, event, /):
+        if event.key() == Qt.Key.Key_Space and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+            self.show_completer_popup()
+            print("hello world !")
+
+
+    def insert_completion(self, completion):
+        tc = self.ui.codeEditor.textCursor()
+        tc.deletePreviousChar()
+        tc.insertText(completion)
+        self.ui.codeEditor.setTextCursor(tc)
+
+    def show_completer_popup(self):
+        tc = self.ui.codeEditor.textCursor()
+        tc.select(tc.SelectionType.WordUnderCursor)
+        current_word = tc.selectedText()
+
+        if current_word:
+            self.completer.setCompletionPrefix(current_word)
+            popup = self.completer.popup()
+
+            cursor_rect = self.ui.codeEditor.cursorRect()
+            global_pos = self.ui.codeEditor.mapToGlobal(cursor_rect.bottomRight())
+            popup.setGeometry(global_pos.x(), global_pos.y(),
+                              200, 100)
+            self.completer.complete(
+
+            )
+            print("executed")
+    """
+
+test_list = ["apple", "microsoft", "google"]
+self.completer = QCompleter()
+self.completer.setModel(QStringListModel(test_list))
+self.completer.setWidget(self.ui.codeEditor)
+self.completer.setCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)

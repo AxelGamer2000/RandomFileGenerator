@@ -1,0 +1,6 @@
+faker
+orjson
+pygments
+inquirer
+jedi
+qtconsole

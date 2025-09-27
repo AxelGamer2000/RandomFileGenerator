@@ -1,0 +1,8 @@
+{
+  "runs": {
+    "rfg": "main_ui",
+    "helper": "helper",
+    "settings": "settings_ui",
+    "editor": "editor"
+  }
+}

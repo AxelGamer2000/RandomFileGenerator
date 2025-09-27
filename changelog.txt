@@ -1,0 +1,42 @@
+V2
+
+--Interface
+Ajout d'un gui pour le programme
+La possibilité de choisir le nombre de fichier (dossier)
+Le type de génération
+Possibilité de choisir un type de fichier seulement a générer
+
+-Helper
+**Ajout d'une interface textuelle, le helper
+Création de groupe 
+Suppression complet du dossier de génération 
+Chercheur de fichier via l'extension
+
+-Launcher
+Ajout d'un launcher pour choisir entre l'app et le helper
+
+-Settings
+Ajout du paramètre "additional_ext" permettant d'ajouter des extensions supplémentaires
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+V3
+
+--Interface
+Ajout de la possibilité d'ajouter un contenu pour les fichiers
+Ajout de la possibilité de généré des fichiers avec un volume défini
+Ajout de la possibilité d'avoir nos propres dictionnaires et sélectionnable via l'interface
+Ajout du dictionnaire d'anglais
+
+--Helper
+Ajout de la commande count qui permet de compter des fichiers via l'extension
+-> Syntaxe: count <ext>
+Amélioration de la commande delall qui permet de supprimer tout les fichiers avec une extension définit ou tout supprimer en laissant vide
+-> Syntaxe: delall <ext> / delall
+
+--Settings
+**Ajout d'une interface graphique pour les paramètres
+Ajout du paramètre "additional_words" permettant d'avoir des mots supplémentaire + celle du dictionnaire sélectionné
+
+--Launcher
+Ajout de la possibilité de lancer l'application de settings via le numéro 3
